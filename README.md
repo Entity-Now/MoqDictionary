@@ -26,6 +26,15 @@ var words = ParseString.getWordAtText("hello world");
 QueryDir.getDir(words);
 ```
 
+> 在线平台
+
+```cs
+TranslateHelper.getTranslateAsync(TranslateType.Google, new List<string>{ "hello word" });
+TranslateHelper.getTranslateAsync(TranslateType.Bing, new List<string>{ "hello word" });
+TranslateHelper.getTranslateAsync(TranslateType.Deep, new List<string>{ "hello word" });
+TranslateHelper.getTranslateAsync(TranslateType.Yandex, new List<string>{ "hello word" });
+```
+
 ## 支持的在线平台
 
 由于都是免费版本，且用且珍惜。
