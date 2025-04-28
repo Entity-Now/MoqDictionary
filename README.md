@@ -2,7 +2,11 @@
 
 一款基于c#的字典库，内含340万+离线单词，并且支持调用线上平台进行翻译。
 
-## 使用方法
+## 安装
+
+```sh
+dotnet add package MoqDictionary --version 1.0.2
+```
 
 ### 离线单词
 
@@ -26,7 +30,7 @@ var words = ParseString.getWordAtText("hello world");
 QueryDir.getDir(words);
 ```
 
-> 在线平台
+## 在线平台
 
 ```cs
 TranslateHelper.getTranslateAsync(TranslateType.Google, new List<string>{ "hello word" });
