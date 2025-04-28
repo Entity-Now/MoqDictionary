@@ -37,7 +37,18 @@ namespace EnTranslate.NetworkTranslates
         };
 
         private static readonly HttpClient httpClient = new HttpClient();
-        public override async Task<List<string>> Translate(List<string> texts, string fromLan, string toLan)
+
+        public override Task<string> Detect(string text, string token = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override Task<string> GetToken()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override async Task<List<string>> Translate(List<string> texts, string fromLan, string toLan, string token = null)
         {
             List<string> result = new List<string>();
 
