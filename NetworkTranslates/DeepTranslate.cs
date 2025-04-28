@@ -1,4 +1,4 @@
-﻿using EnTranslate.NetworkTranslates.Interfaces;
+﻿using MoqDictionary.NetworkTranslates.Interfaces;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace EnTranslate.NetworkTranslates
+namespace MoqDictionary.NetworkTranslates
 {
     public class DeepTranslate : ANetworkTranslate
     {

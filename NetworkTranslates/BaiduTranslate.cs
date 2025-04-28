@@ -1,4 +1,4 @@
-﻿using EnTranslate.NetworkTranslates.Interfaces;
+﻿using MoqDictionary.NetworkTranslates.Interfaces;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace EnTranslate.NetworkTranslates
+namespace MoqDictionary.NetworkTranslates
 {
     public class BaiduTranslate : ANetworkTranslate
     {

@@ -1,4 +1,4 @@
-﻿using EnTranslate.NetworkTranslates.Interfaces;
+﻿using MoqDictionary.NetworkTranslates.Interfaces;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System;
@@ -11,7 +11,7 @@ using System.Net.Http.Headers;
 using System.Linq;
 using System.Threading;
 
-namespace EnTranslate.NetworkTranslates
+namespace MoqDictionary.NetworkTranslates
 {
     /// <summary>
     /// <see cref="https://github.com/JuchiaLu/Multi-Supplier-MT-Plugin/blob/f2eddae3f54970845472abb66366afab23536f45/MultiSupplierMTPlugin/Services/MicrosoftBuiltIn.cs"/>

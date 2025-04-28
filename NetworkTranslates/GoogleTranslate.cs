@@ -1,4 +1,4 @@
-﻿using EnTranslate.NetworkTranslates.Interfaces;
+﻿using MoqDictionary.NetworkTranslates.Interfaces;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnTranslate.NetworkTranslates
+namespace MoqDictionary.NetworkTranslates
 {
     public class GoogleTranslate : ANetworkTranslate
     {

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using EnTranslate.Model;
+using MoqDictionary.Model;
 using Newtonsoft.Json.Linq;
 
-namespace EnTranslate.utility
+namespace MoqDictionary.utility
 {
     public static class QueryDir
     {
@@ -26,7 +26,7 @@ namespace EnTranslate.utility
                     return null;
                 }
                 string prefix = word.Substring(0, 2);
-                string dir = utlis.ReadEmbeddedResource($"EnTranslate.Translates.{prefix.ToLower()}.json");
+                string dir = utlis.ReadEmbeddedResource($"MoqDictionary.Translates.{prefix.ToLower()}.json");
                 if (string.IsNullOrEmpty(dir) || dir is null)
                 {
                     return null;

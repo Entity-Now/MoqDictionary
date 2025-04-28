@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnTranslate.NetworkTranslates.Interfaces
+namespace MoqDictionary.NetworkTranslates.Interfaces
 {
     public abstract class ANetworkTranslate
     {

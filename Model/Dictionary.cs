@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnTranslate.Model
+namespace MoqDictionary.Model
 {
     public class Dictionarys
     {

@@ -1,12 +1,12 @@
-﻿using EnTranslate.Model.Enum;
-using EnTranslate.NetworkTranslates.Interfaces;
-using EnTranslate.NetworkTranslates;
+﻿using MoqDictionary.Model.Enum;
+using MoqDictionary.NetworkTranslates.Interfaces;
+using MoqDictionary.NetworkTranslates;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnTranslate.utility
+namespace MoqDictionary.utility
 {
     public static class TranslateHelper
     {

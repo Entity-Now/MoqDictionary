@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace EnTranslate.utility
+namespace MoqDictionary.utility
 {
     public static class ParseString
     {

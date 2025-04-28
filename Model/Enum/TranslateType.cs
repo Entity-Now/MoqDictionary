@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EnTranslate.Model.Enum
+namespace MoqDictionary.Model.Enum
 {
     public enum TranslateType
     {
