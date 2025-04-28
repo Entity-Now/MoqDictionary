@@ -1,6 +1,3 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
 name: .NET
 
 on:
@@ -9,7 +6,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +20,10 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
       working-directory: ./
+    - name: Pack
+      run: dotnet pack --configuration Release --no-build --output ./artifacts
+      working-directory: ./
     - name: Publish the package to nuget.org
-      run: dotnet nuget push */bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push ./artifacts/*.nupkg -k $NUGET_AUTH_TOKEN -s https://api.nuget.org/v3/index.json
       env:
         NUGET_AUTH_TOKEN: ${{secrets.NUGET_API_KEY}}
